@@ -436,13 +436,48 @@ html {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
+.section-work {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .section-work {
+    display: flex;
+  }
 }
 
 .no-padding {
-  padding-bottom: 0;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media (min-width: 768px) {
+  .no-padding {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .no-padding {
+    padding-bottom: 0;
+    padding-top: 94px;
+  }
 }
 
 .section-title {
@@ -450,9 +485,15 @@ html {
   margin-bottom: 50px;
   color: #212121;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 
 .section-descriptions {
@@ -749,7 +790,13 @@ textarea {
   list-style: none;
   justify-content: center;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1200px) {
+  .icons-list {
+    margin-bottom: 30px;
+  }
 }
 
 .social-icons-link {
@@ -837,6 +884,8 @@ textarea {
 
 .work-list {
   display: none;
+  display: flex;
+  flex-wrap: wrap;
   /*margin-top: 0;
   margin-bottom: 0;*/
   margin: auto;
@@ -877,14 +926,44 @@ textarea {
   line-height: 1.18;
 }
 
+@media (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .team-list .names {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 
-.team-list .names:not(:last-child) {
-  margin-right: 30px;
+@media (min-width: 768px) {
+  .team-list .names {
+    width: calc((100% - 4 * 15px) / 2);
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-list .names {
+    width: calc((100% - 8 * 15px) / 4);
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-list .names:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-names {
@@ -895,6 +974,9 @@ textarea {
 }
 
 .team-photo {
+  display: block;
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
 }
 
@@ -905,8 +987,40 @@ textarea {
   color: #757575;
 }
 
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .client-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .client-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
 .client-list .clients {
-  width: 170px;
+  width: calc((100% - 4 * 15px) / 2);
+  margin-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .client-list .clients {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
+
+@media (min-width: 1200px) {
+  .client-list .clients {
+    width: calc((100% - 8 * 15px) / 4);
+  }
 }
 
 .client-list .clients:not(:last-child) {
@@ -940,12 +1054,38 @@ textarea {
 }
 
 .container-footer {
+  justify-content: space-around;
+  align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+@media (min-width: 768px) {
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .logo-footer {
-  margin-right: 70px;
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .logo-footer {
+    margin-right: 70px;
+  }
 }
 
 .footer-logo {
@@ -982,12 +1122,20 @@ textarea {
 }
 
 .social-container {
-  margin-right: 30px;
-  width: 270px;
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .social-container {
+    margin-right: 30px;
+    width: 270px;
+  }
 }
 
 .social-container .list {
-  display: flex;
+  display: inline-flex;
 }
 
 .social-item:not(:last-child) {
@@ -1004,8 +1152,22 @@ textarea {
   letter-spacing: 0.03em;
 }
 
+@media (min-width: 1200px) {
+  .footer-content {
+    justify-content: start;
+    align-items: flex-start;
+  }
+}
+
 .assign-container {
-  width: 570px;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .assign-container {
+    width: 570px;
+  }
 }
 
 .footer-icons-link {
@@ -1029,21 +1191,36 @@ textarea {
 }
 
 .form-footer {
-  display: flex;
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .form-footer {
+    display: flex;
+  }
 }
 
 .form-field-footer {
-  display: flex;
+  display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
   padding: 15px 16px;
+  margin-bottom: 20px;
   width: 100%;
   margin-right: 12px;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
   color: white;
+}
+
+@media (min-width: 1200px) {
+  .form-field-footer {
+    display: flex;
+  }
 }
 
 .form-field-footer input::placeholder {
@@ -1056,7 +1233,8 @@ textarea {
 
 .button-footer {
   position: relative;
-  display: flex;
+  display: inline-flex;
+  align-items: center;
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 10px 29px;
@@ -1069,6 +1247,12 @@ textarea {
   letter-spacing: 0.06em;
   text-decoration: none;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .button-footer {
+    display: flex;
+  }
 }
 
 .button-footer:hover, .button-footer:focus {
