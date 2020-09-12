@@ -3,8 +3,9 @@
   align-items: center;
 }
 .site-nav {
-  display: flex;
-  margin-left: 85px;
+  display: none;
+  // display: flex;
+  // margin-left: 85px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -32,7 +33,7 @@
   &.current {
     color: $accent-colour;
   }
-  
+}
 .site-nav .link::after {
   position: absolute;
   content: '';
@@ -44,17 +45,18 @@
   background-color: $accent-colour;
   transform: scaleX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &:hover::after {
-    transform: scaleX(1);
-  }
+.site-nav .link:hover::after {
+  transform: scaleX(1);
 }
 
 /*nav contacts*/
 
 .nav-contacts {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  // display: flex;
+  // margin-left: auto;
 }
 
 .nav-contacts .item + .item {
