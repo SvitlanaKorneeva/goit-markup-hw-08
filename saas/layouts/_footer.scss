@@ -1,0 +1,158 @@
+.footer {
+  background-color: $background-footer-colour;
+}
+
+.section-footer {
+  padding: 0;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer {
+  margin-right: 70px;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  color: $accent-colour;
+  font-family: 'Raleway', sans-serif;
+
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-item {
+  color: $primary-white-color;
+  margin-bottom: 20px;
+}
+
+.adress {
+  color: $primary-white-color;
+  font-style: normal;
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+
+.fotter-contacts {
+  color: $secondary-text-color;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.footer-logo-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.social-container {
+  margin-right: 30px;
+  width: 270px;
+}
+
+.social-container .list {
+  display: flex;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-content {
+  color: $primary-white-color;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.assign-container {
+  width: 570px;
+}
+
+.footer-icons-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $accent-colour;
+  }
+}
+
+.footer-icon {
+  fill: $primary-white-color;
+}
+
+.form-footer {
+  display: flex;
+}
+
+.form-field-footer {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 15px 16px;
+  width: 100%;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: white;
+}
+
+.form-field-footer input::placeholder {
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-footer {
+  position: relative;
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 29px;
+  min-width: 200px;
+
+  color: $primary-white-color;
+  background-color: $accent-colour;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.button-icon-submit {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  fill: white;
+  margin-left: 10px;
+}

@@ -1,0 +1,37 @@
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list .item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features-item {
+  display: flex;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 102px;
+  border-radius: 4px;
+  justify-content: space-between;
+  background-color: $secondary-background-color;
+}
+
+.features-list .title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $primary-text-color;
+}
+
+.features-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $secondary-text-color;
+  margin: 0px;
+  padding: 0px;
+}
