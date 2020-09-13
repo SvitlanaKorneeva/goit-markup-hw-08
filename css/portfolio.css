@@ -531,10 +531,28 @@ html {
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.menu-container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu-container {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-container {
+    display: flex;
+  }
 }
 
 .site-nav {
-  display: none;
+  margin-left: auto;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -548,7 +566,6 @@ html {
 
 @media (min-width: 1200px) {
   .site-nav {
-    display: flex;
     margin-left: 93px;
     margin-right: 103px;
     align-items: center;
@@ -597,10 +614,6 @@ html {
 }
 
 /*nav contacts*/
-.nav-contacts {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .nav-contacts {
     display: flex;
@@ -642,6 +655,10 @@ html {
 .contacts-icon-mail {
   vertical-align: middle;
   margin-right: 10px;
+}
+
+.icon-cross {
+  fill: black;
 }
 
 .footer {

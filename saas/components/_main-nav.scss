@@ -1,10 +1,24 @@
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.menu-container {
+  display: none;
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 
 .site-nav {
-  display: none;
+  margin-left: auto;
+  text-align: center;
 
   @include for-size(tablet-landscape) {
     display: flex;
@@ -13,7 +27,6 @@
     align-items: center;
   }
   @include for-size(desktop) {
-    display: flex;
     margin-left: 93px;
     margin-right: 103px;
     align-items: center;
@@ -65,7 +78,7 @@
 /*nav contacts*/
 
 .nav-contacts {
-  display: none;
+  // display: none;
 
   @include for-size(tablet-landscape) {
     display: flex;
@@ -104,4 +117,8 @@
 .contacts-icon-mail {
   vertical-align: middle;
   margin-right: 10px;
+}
+
+.icon-cross {
+  fill: black;
 }
