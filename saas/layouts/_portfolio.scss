@@ -2,8 +2,11 @@
   box-sizing: border-box;
 }
 .main-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-item {
@@ -12,7 +15,8 @@
   border-radius: 4px;
   padding: 6px 22px;
   margin-right: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  //margin-bottom: 50px;
 
   font-weight: 500;
   font-size: 16px;
@@ -34,15 +38,28 @@
 
 .list-button {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 40px;
   list-style: none;
-  justify-content: center;
-  margin: 0;
+
   padding: 0;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    margin-bottom: 14px;
+  }
+  @include for-size(desktop) {
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 34px;
+    justify-content: center;
+  }
 }
 .list-button .button-item:not(:last-child) {
   margin-right: 8px;
@@ -57,37 +74,37 @@
   letter-spacing: 0.06em;
 }
 
-.potfolio-container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 60px;
+
+  @include for-size(tablet-landscape) {
+    padding-bottom: 94px;
+  }
 }
 
 .project-list .elements {
-  margin: 15px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
   border: 1px solid #eeeeee;
 
   @include for-size(tablet-landscape) {
     width: calc((100% - 4 * 15px) / 2);
+
+    &:nth-child(2n-1) {
+      margin-right: 30px;
+    }
   }
   @include for-size(desktop) {
     width: calc((100% - 6 * 15px) / 3);
+    margin-right: 30px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
-}
-
-.elements:nth-child(3n) {
-  margin-right: 0;
-}
-
-.elements:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .elements .elements-content {
@@ -110,6 +127,8 @@
 }
 
 .project-thumb {
+  width: 100%;
+  height: auto;
   position: relative;
   overflow: hidden;
 }

@@ -573,6 +573,10 @@ html {
   }
 }
 
+.menu-container {
+  z-index: 1;
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -942,6 +946,10 @@ textarea {
   background-position: center;
 }
 
+.hero-content {
+  max-width: 696px;
+}
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -951,6 +959,12 @@ textarea {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+  }
 }
 
 .features-list {
@@ -1193,6 +1207,7 @@ textarea {
 @media (min-width: 1200px) {
   .logo-footer {
     margin-right: 70px;
+    text-align: start;
   }
 }
 
@@ -1239,6 +1254,7 @@ textarea {
   .social-container {
     margin-right: 30px;
     width: 270px;
+    text-align: start;
   }
 }
 
@@ -1264,6 +1280,7 @@ textarea {
   .footer-content {
     justify-content: start;
     align-items: flex-start;
+    text-align: start;
   }
 }
 
@@ -1274,6 +1291,7 @@ textarea {
 
 @media (min-width: 1200px) {
   .assign-container {
+    margin: 0;
     width: 570px;
   }
 }
@@ -1328,6 +1346,7 @@ textarea {
 @media (min-width: 1200px) {
   .form-field-footer {
     display: flex;
+    margin-bottom: 0px;
   }
 }
 

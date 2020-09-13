@@ -31,6 +31,7 @@
   margin-bottom: 60px;
   @include for-size(desktop) {
     margin-right: 70px;
+    text-align: start;
   }
 }
 
@@ -75,6 +76,7 @@
   @include for-size(desktop) {
     margin-right: 30px;
     width: 270px;
+    text-align: start;
   }
 }
 .social-container .list {
@@ -96,6 +98,7 @@
   @include for-size(desktop) {
     justify-content: start;
     align-items: flex-start;
+    text-align: start;
   }
 }
 
@@ -104,6 +107,7 @@
   text-align: center;
 
   @include for-size(desktop) {
+    margin: 0;
     width: 570px;
   }
 }
@@ -157,6 +161,7 @@
 
   @include for-size(desktop) {
     display: flex;
+    margin-bottom: 0px;
   }
 }
 

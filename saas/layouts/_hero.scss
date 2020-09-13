@@ -19,7 +19,7 @@
   background-position: center;
 }
 .hero-content {
-  // max-width: 696px;
+  max-width: 696px;
 }
 
 .hero-title {
@@ -34,4 +34,8 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @include for-size(desktop) {
+    font-size: 44px;
+  }
 }
