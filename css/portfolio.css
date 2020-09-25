@@ -528,13 +528,22 @@ img {
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
   font-weight: bold;
-  line-height: 1.19;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
 }
 
 @media (min-width: 1200px) {
   .logo {
     font-size: 26px;
+    margin-right: 93px;
+    line-height: 1.19;
   }
 }
 

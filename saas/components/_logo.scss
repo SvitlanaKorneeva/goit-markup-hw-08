@@ -5,11 +5,17 @@
 
   font-size: 24px;
   font-weight: bold;
-  line-height: 1.19;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
   text-decoration: none;
 
+  @include for-size(tablet-landscape) {
+    margin-right: 88px;
+  }
   @include for-size(desktop) {
     font-size: 26px;
+    margin-right: 93px;
+    line-height: 1.19;
   }
 
   &-title {
